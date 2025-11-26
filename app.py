@@ -47,7 +47,7 @@ def handle_pets():
         category = request.args.get("category")
         if category:
             matching_pets = [
-                pet for pet in pets.values() if pet["category"] == category
+                pet for pet in pets.values() if pet["category"].lower() == category.lower()
             ]
             return jsonify(matching_pets)
 
