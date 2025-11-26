@@ -1,6 +1,6 @@
 # app.py
 from flask import Flask, jsonify, request, render_template, make_response
-import json
+# import json
 
 # A simple in-memory dictionary to simulate a database for our pets
 pets = {}
